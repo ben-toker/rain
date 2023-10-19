@@ -3,7 +3,8 @@ import webbrowser
 import sys
 
 # Your YouTube Data API v3 key
-API_KEY = 'AIzaSyDUAZC4Z60zJMfYqGdFupsw8Ftl9Fu1U6I'
+API_KEY_FILE = open("APIKEY.txt","r")
+API_KEY = API_KEY_FILE.read()
 
 # Base URL for the YouTube Data API v3 search endpoint
 SEARCH_URL = 'https://www.googleapis.com/youtube/v3/search'
